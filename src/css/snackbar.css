@@ -1,0 +1,87 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+
+input {
+    border: 1px solid #808080;
+border-radius: 4px;
+width: 360px;
+height: 40px;
+margin-top: 8px;
+margin-bottom: 16px;
+}
+
+input:hover {
+    border: 1px solid #000;
+}
+
+button {
+    margin-top: 24px;
+    border-radius: 8px;
+padding: 8px 16px;
+width: 360px;
+height: 40px;
+background: #4e75ff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 500;
+font-size: 16px;
+color: #fff;
+border: none;
+}
+
+button:hover {
+    background-color: #6c8cff;
+}
+
+fieldset {
+    height: 64px;
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+fieldset:hover {
+    border: 1px solid #000;
+}
+
+.radio {
+    border: 1px solid #757575;
+border-radius: 14px;
+width: 20px;
+height: 20px;
+}
+
+.lab-rad {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    margin-right: 54px;
+    align-items: center;
+    justify-content: center;
+}
+
+legend {
+    margin-left: 12px;
+}
+
+.delay-inp {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
