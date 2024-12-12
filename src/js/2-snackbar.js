@@ -1,7 +1,8 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 const radio = document.querySelector('.lab-rad');
-const fulfilled = document.querySelector('.green'); 
+const fulfilled = document.querySelector('[value="fulfilled"]'); 
+const rejected = document.querySelector('[value="rejected"]');
 const button = document.querySelector('[type="submit"]');
 const delay = document.querySelector('[type="number"]');
 button.addEventListener("click", (evt) => {
