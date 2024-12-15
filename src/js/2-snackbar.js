@@ -5,15 +5,18 @@ const fulfilled = document.querySelector('[value="fulfilled"]');
 const rejected = document.querySelector('[value="rejected"]');
 const button = document.querySelector('[type="submit"]');
 const delay = document.querySelector('[type="number"]');
-button.addEventListener("click", (evt) => {
+const form = document.querySelector('.form');
+form.addEventListener("submit", (evt) => {
     evt.preventDefault();
     const delayValue = parseInt(delay.value, 10);
+    const isFulfilled = fulfilled.checked;
+    const isRejected = rejected.checked;
     const promise = new Promise((resolve, reject) => {
 
         setTimeout(() => {
-            if (fulfilled.checked) {
+            if (isFulfilled) {
                 resolve(`✅ Fulfilled promise in ${delayValue}ms`);
-            } else {
+            } else if (isRejected) {
                 reject(`❌ Rejected promise in ${delayValue}ms`);
             }
         }, delayValue);
